@@ -1,0 +1,40 @@
+// _media.scss
+
+/* Mobile Styles */
+@media only screen and (max-width: 600px) {
+  nav {
+    .links {
+      flex-direction: column;
+      align-items: center;
+      display: none;
+
+      a {
+        padding: 15px;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+      }
+    }
+
+    .burger-menu {
+      display: block;
+      font-size: 20px;
+      color: #333;
+      cursor: pointer;
+    }
+  }
+
+  nav.active .links {
+    display: flex;
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  /* Add styles for tablet screens */
+}
+
+/* Larger Screen Styles */
+@media only screen and (min-width: 1025px) {
+  /* Add styles for larger screens */
+}
