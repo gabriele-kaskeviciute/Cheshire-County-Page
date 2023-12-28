@@ -1,0 +1,102 @@
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 167px;
+  background: $black;
+
+  .large-logo {
+    background: url(../images/logo-large.svg);
+    width: 389px;
+    height: 168px;
+    margin-top: 213px;
+    margin-bottom: 214px;
+  }
+
+  .right-content {
+    width: 465px;
+    color: $white;
+
+    .right-main-title {
+      font-size: 30px;
+      font-weight: 600;
+      line-height: 43px;
+      padding-bottom: 27px;
+      
+    }
+
+    .right-line {
+      height: 2px;
+      width: 200px;
+      background: $teracotta;
+      margin-bottom: 27px;
+    }
+
+    .right-par {
+      font-size: 14px;
+      line-height: 20px;
+      width: 451px;
+      padding-bottom: 43px;
+    }
+
+    .eye-description {
+        display: flex;
+        gap: 18px;
+            .eye-icon {
+                    background-color: $teracotta; 
+                    width: 50px;
+                    height: 50px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    color: $white;
+                    font-size: 24px;
+    }
+    .eye-content {
+        .eye-par {
+            width: 394px;
+            font-size: 14px;
+            line-height: 20px;
+            padding-bottom: 36px;
+        } 
+        .right-title {
+            font-size: 14px;
+            font-weight: 600;
+            padding-bottom: 6px;
+        } 
+      }
+    }
+    
+    .chat-description {
+        display: flex;
+        gap: 18px;
+            .chat-icon {
+                background-color: $teracotta;
+                width: 50px;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                color: $white;
+                font-size: 24px;
+            }
+    
+      
+      .chat-content {
+        .chat-par {
+          width: 394px;
+          font-size: 14px;
+          line-height: 20px;
+          padding-bottom: 36px;
+        }
+        .right-title-2 {
+          font-size: 14px;
+          font-weight: 600;
+          padding-bottom: 6px;
+            } 
+        }
+    }
+  }
+}

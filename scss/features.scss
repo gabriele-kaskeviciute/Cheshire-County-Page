@@ -1,0 +1,135 @@
+.features {
+  position: relative;
+  display: flex; 
+  justify-content: center;
+  padding-top: 114px;
+  padding-bottom: 115px;
+  margin: 0 auto;
+  background: transparent linear-gradient(270deg, #6696E2 0%, #E27866 100%) 0% 0% no-repeat padding-box;
+opacity: 0.96;
+z-index: 1;
+}
+
+.features::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url(../images/mountains.png);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.4;
+  z-index: 2;
+  min-height: 595px;
+  
+}
+
+.column-boxes {
+  position: relative;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column; 
+
+
+  .box-top {
+    height: 100px;
+    width: 100px;
+    background-color: $teracotta; 
+    margin-bottom: 21px; 
+    font-size: 14px;
+    color: $white;
+    font-weight: 400;
+    text-transform: uppercase;
+
+     
+    .box-text-top {
+        transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);
+        padding-top: 33px;
+        margin-left: -3px;
+        font-weight: 600;
+    }
+  }
+  .box-middle,
+  .box-bottom {
+    height: 100px;
+    width: 100px;
+    background-color: $muted-teracotta; 
+    margin-bottom: 21px; 
+    font-size: 14px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+
+    .box-text-middle {
+        transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);
+        padding-top: 32px;
+        padding-left: 6px;
+        font-weight: 600;
+    }
+    .box-text-bottom {
+        transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);
+        padding-top: 32px;
+        font-weight: 600;
+    }
+  }
+}
+
+.description {
+  position: relative;
+  z-index: 2;
+  margin-left: 52px;
+  margin-right: 70px;
+  padding-top: 36px;
+
+  .center_title {
+    width: 509px;
+    height: 124px;
+    font-size: 36px;
+    font-weight: 600;
+    color: $white;
+  }
+
+  p {
+    color: $white;
+    width: 517px;
+    font-size: 14px;
+    padding-top: 33px;
+  }
+
+
+}
+.mixed-boxes {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+
+    .top-two {
+        display: flex;
+        gap: 26px;
+        .explore-box {
+          width: 168px;
+          height: 168px;
+          background: url(../images/leafs.png);
+          background-size: cover;
+          background-position: center;
+        }
+        .salad-box {
+          width: 168px;
+          height: 168px;
+          background: url(../images/salad.png);
+          background-size: cover;
+          background-position: center;
+        }
+    }
+       .steps-box {
+        margin-top: 21px;
+          width: 362px;
+          height: 177px;
+          background: url(../images/steps.png);
+          background-size: cover;
+          background-position: center;
+        }
+}
+

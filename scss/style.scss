@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@import "variables";
+@import "images";
+@import "nav";
+@import "top-page";
+@import "soc-media";
+@import "features";
+@import "about";
+@import "awesome";
+@import "pricing";
+@import "reviews";
+@import "contactUs";
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  
+  min-width: 1400px;
+  font-family: $Montserrat;
+}
+
+
+
+
+

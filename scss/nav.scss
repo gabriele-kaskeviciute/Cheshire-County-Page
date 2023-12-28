@@ -1,0 +1,40 @@
+//width 1400px
+
+nav {
+    background: $black;
+    top: 0px;
+    left: 0px;
+    height: 72px;
+    background: #1C1C1C 0% 0% no-repeat padding-box;
+    opacity: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+}
+.links {
+    top: 25px;
+    left: 808px;
+    width: 61px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: $white;
+    
+}
+
+.title {
+    background: url( ../images/logo-small.svg);
+    top: 10px;
+    left: 147px;
+    width: 119px;
+    height: 52px;
+}
