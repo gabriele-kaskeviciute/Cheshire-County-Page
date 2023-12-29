@@ -1,6 +1,125 @@
 // _media.scss
 
 /* Mobile Styles */
+
+@media (max-width: 465px) {
+    body{
+        width: 456px;
+      
+
+    }
+    nav {
+        max-width: 465px;
+    }
+    .top-page h1 {
+        font-size: 16px;
+        line-height: 20px;
+        max-width: 465px;
+        padding-left:40px;
+        
+    }
+    .top-page p {
+        font-size: 10px;
+        line-height: 12px;
+        width: 300px;
+        padding-left:40px;
+    }
+    .mediumLogo {
+        margin-left:40px;
+        margin-top: -30px;
+    }
+    .download {
+        margin-left: 110px;;
+    }
+    .line {
+        margin-left:40px;
+    }
+     .top-page::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: url(../images/ny.png);
+        background-size:100%; 
+        
+        background-position: center;
+        opacity: 0.4;
+        z-index: 1;
+}
+.content {
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+    width: 465px;
+    gap: 40px;
+    justify-content: left;
+    p {
+        width: 300px;
+    }
+    .soc-icons {
+        display: flex;
+        gap: 10px;
+    }
+}
+.features {
+    display: flex;
+    flex-direction: column;
+    .column-boxes {
+        display: flex;
+        flex-direction: row;
+        margin-left: 25px;
+    }
+    .center_title {
+        font-size: 20px;
+        width: 250px;
+    }
+    p {
+        width: 250px;
+        padding-bottom: 10px;
+    }
+    .top-two {
+        gap: 10px
+    }
+    .steps-box {
+        width: 300px;
+        margin-left: 25px;
+    }
+   
+}
+.about {
+    width: 465px;
+        .large-logo {
+            display: none;
+        }
+        .right-main-title {
+            font-size: 20px;
+            width: 300px;
+            margin-left: 30px;
+        }
+        .right-line {
+            margin-left: 30px;
+        }
+        p .right-par {
+            width: 200px;
+        }
+
+}
+
+
+}
+
+
+
+
 @media only screen and (max-width: 600px) {
   nav {
     .links {
@@ -19,14 +138,17 @@
     .burger-menu {
       display: block;
       font-size: 20px;
-      color: #333;
+      color: #832b2b;
       cursor: pointer;
     }
   }
 
   nav.active .links {
     display: flex;
+    flex-direction: column;
   }
+
+
 }
 
 /* Tablet Styles */
