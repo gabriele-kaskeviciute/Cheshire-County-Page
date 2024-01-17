@@ -1,89 +1,88 @@
 .social-media {
-    // height: 105px;
-    background: $white;
+  // height: 105px;
+  background: $white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 35px;
+  padding-top: 12px;
+
+  .paragraph {
+    width: 394px;
+    height: 38px;
+    font-size: 14px;
+    color: $textLightGray;
+
+    .soc-media-title {
+      font-size: 20px;
+      font-weight: 600;
+      color: $textDarkGray;
+      padding-bottom: 5px;
+    }
+  }
+
+  .soc-icons {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center; 
-    width: 100%;
-    padding-bottom: 35px;
-    padding-top: 12px;
+    gap: 105px;
+    padding-left: 200px;
+    margin-top: 20px;
 
-    
-    .paragraph {
-        width: 394px;
-        height: 38px;
-        font-size: 14px;
-        color: $textLightGray;
-        
-        .soc-media-title{
-            font-size: 20px;
-            font-weight: 600;
-            color: $textDarkGray;
-            padding-bottom: 5px;
-        }
+    .facebook {
+      background: url("../images/facebook-large.svg");
+      height: 30px;
+      width: 16px;
     }
 
-    .soc-icons {
-        display: flex;
-        flex-direction: row;
-        gap: 105px;
-        padding-left: 200px;
-        margin-top: 20px;
-       
-    
-        .facebook {
-            background: url('../images/facebook-large.svg');
-            height: 30px;
-            width: 16px; 
-            
-        }
-    
-        .instagram {
-            background: url('../images/instagram-large.svg');
-            height: 30px;
-            width: 30px; 
-        }
-    
-        .twitter {
-            background: url('../images/twitter.svg');
-            height: 30px;
-            width: 33px; 
-        }
-    
-        .pinterest {
-            background: url('../images/pinterest.svg');
-            height: 30px;
-            width: 24px; 
-        }
-    
-     .internet {
-  height: 30px;
-  width: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  color: $teracotta;
-  font-size: 24px;
+    .instagram {
+      background: url("../images/instagram-large.svg");
+      height: 30px;
+      width: 30px;
+    }
 
-  &::before {
-    content: '\f012'; // Unicode character for the signal-bars icon in Font Awesome 6 Free
-    font-family: 'Font Awesome 6 Free';
+    .twitter {
+      background: url("../images/twitter.svg");
+      height: 30px;
+      width: 33px;
+    }
+
+    .pinterest {
+      background: url("../images/pinterest.svg");
+      height: 30px;
+      width: 24px;
+    }
+
+    .internet {
+      height: 30px;
+      width: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      color: $teracotta;
+      font-size: 24px;
+
+      &::before {
+        content: "\f012"; // Unicode character for the signal-bars icon in Font Awesome 6 Free
+        font-family: "Font Awesome 6 Free";
+      }
+    }
+
+    /* Font Awesome 6 class for signal-bars icon */
+    .internet::before {
+      content: "\f012";
+      font-family: "Font Awesome 6 Free";
+    }
+
+    /* For Font Awesome 5 class */
+    .internet::before {
+      content: "\f0c9";
+      font-family: "Font Awesome 5 Free";
+    }
   }
-}
-
-/* Font Awesome 6 class for signal-bars icon */
-.internet::before {
-  content: '\f012';
-  font-family: 'Font Awesome 6 Free';
-}
-
-/* For Font Awesome 5 class */
-.internet::before {
-  content: '\f0c9';
-  font-family: 'Font Awesome 5 Free';
-}
-
-    }
+  .soc-icons:hover {
+    cursor: pointer;
+  }
 }

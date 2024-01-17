@@ -1,40 +1,70 @@
-//width 1400px
-
 nav {
-    background: $black;
-    top: 0px;
-    left: 0px;
-    height: 72px;
-    background: #1C1C1C 0% 0% no-repeat padding-box;
-    opacity: 1;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    position: fixed;
-    z-index: 1000;
-    width: 100%;
-}
-.links {
-    top: 25px;
-    left: 808px;
-    width: 61px;
-    font-size: 18px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 30px;
+  background: #1c1c1c;
+  top: 0px;
+  left: 0px;
+  height: 72px;
+  background: #1c1c1c 0% 0% no-repeat padding-box;
+  opacity: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
 }
 
-a {
-    text-decoration: none;
-    color: $white;
-    
+ul {
+  list-style: none;
+  margin: 0;
+  display: flex;
+  gap: 44px;
+}
+
+li a {
+  text-decoration: none;
+  color: $white;
+  opacity: 0.69;
+  position: relative;
+}
+li a::after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 2px;
+  width: 0%;
+  background-color: $teracotta;
+  bottom: -26px;
+  transition: all ease-in-out 0.3s;
+}
+
+li a:hover {
+  color: $white;
+  opacity: 1;
+}
+
+li a:hover::after {
+  width: 100%;
+}
+
+.special::after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: $teracotta;
+  bottom: -26px;
+  transition: all ease-in-out 0.3s;
+}
+.special {
+  color: $white;
+  opacity: 1;
 }
 
 .title {
-    background: url( ../images/logo-small.svg);
-    top: 10px;
-    left: 147px;
-    width: 119px;
-    height: 52px;
+  background: url(../images/logo-small.svg);
+  top: 10px;
+  left: 147px;
+  width: 119px;
+  height: 52px;
 }

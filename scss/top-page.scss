@@ -1,184 +1,186 @@
 .top-page {
-   position: relative;
-   display: block;
-   margin: 0 auto;
-   background: $black;
-   
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  background: $black;
 }
+
 .top-page::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: url(../images/ny.png);
-    background-size: cover;
-    background-position: center;
-    opacity: 0.4;
-    z-index: 1; 
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url(../images/ny.png);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.4;
+  z-index: 1;
 }
 
 .content {
-   width: 100%;
-    color: $white;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 150px;
-    margin-top: 72px;
-
+  width: 100%;
+  color: $white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 150px;
+  margin-top: 72px;
 }
 
 .left {
-    position: relative; 
-    z-index: 2; 
-    
-        .mediumLogo {
-            background: url( ../images/logo-medium.svg);
-            width: 247px;
-            height: 108px;
-            margin-bottom: 20px;
-            margin-top: 66px;
-            
-        }
-        h1 {
-            font-size: 36px;
-            font-weight: 600;
-            line-height: 43.2px;
-        }
+  position: relative;
+  z-index: 2;
 
-        .line {
-            height: 2px;
-            width: 60px;
-            background: rgb(255, 255, 255);
-            margin-top: 20px;
-            margin-bottom: 25px;
-        }
-        button{
-            background-color: transparent;
-            color: $white;
-            font-weight: 600;
-            font-size: 14px;
-            text-transform: uppercase;
-            border: 2px solid $white;
-            margin-top: 40px;
-            padding: 10px 25px;
-        }
-        button:hover {
-            cursor: pointer;
-            background: rgba($textLightGray, 0.3);
-            transition: 0.2s;
-        }
-        p{
-            width: 651px;
-            font-size: 16px;
-            font-weight: 600;
-            line-height: 23px;
-            opacity: 0.8;
-        }
+  .mediumLogo {
+    background: url(../images/logo-medium.svg);
+    width: 247px;
+    height: 108px;
+    margin-bottom: 20px;
+    margin-top: 66px;
+  }
+  h1 {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 43.2px;
+  }
+
+  .line {
+    height: 2px;
+    width: 60px;
+    background: rgb(255, 255, 255);
+    margin-top: 20px;
+    margin-bottom: 25px;
+  }
+  button {
+    background-color: transparent;
+    color: $white;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    border: 2px solid $white;
+    margin-top: 40px;
+    padding: 10px 25px;
+  }
+  button:hover {
+    cursor: pointer;
+    background: rgba($textLightGray, 0.3);
+    transition: 0.2s;
+  }
+  p {
+    width: 651px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 23px;
+    opacity: 0.8;
+  }
 }
 
+// =============== RIGHT ================
+
 .right {
-    position: relative;
-    z-index: 2; 
-    
-    .trial-box{
-        background: $white;
-        height: 425px;
-        width: 360px;
-        border-radius: 10px; //not working
-        margin-top: 75px;
-        margin-bottom: 139px;
-        color: $black;
-        
-       
-        .form-header {
-            background: $formLightGray;
-            height: 57px;
-            text-align: center;
-            padding-top: 16px;
-            font-size: 20px;
-            font-weight: 600;
-            border-top-left-radius: 5px;
-            border-top-right-radius: 5px;
-          
-            span{
-                text-transform: uppercase;
-                color: $teracotta;
-            }
-        }
-        h4 {
-            padding-left: 51px;
-            margin-top: 30px;
-            font-size: 16px;
-        }
+  position: relative;
+  z-index: 2;
 
-        form {
-            display: flex;
-            flex-direction: column;
-            width: 260px;
-            margin: 0 auto;
-    
-            input{
-                padding-left: 10px;
-                padding-bottom: 3px;
-                padding-top: 30px;
-                border: none;
-                border-bottom: 1.5px solid $shadow; 
-                outline: none;
+  .trial-box {
+    background: $white;
+    height: 425px;
+    width: 360px;
+    border-radius: 10px;
+    margin-top: 75px;
+    margin-bottom: 139px;
+    color: $black;
 
-                &::placeholder {
-                color: $placeholderGray;
-                font-size: 12px;
-                }
-            }
-        }
-        .sub-type {
-            padding-left: 51px;
-            padding-top: 30px;
-            font-size: 16px;
-        }
-        .trial-options {
-            padding-left: 51px;
-            display: flex;
-            text-transform: uppercase;
-            font-size: 9px;
-            font-weight: 800;
-            margin-top: 15px;
-            gap: 15px;
+    .form-header {
+      background: $formLightGray;
+      height: 57px;
+      text-align: center;
+      padding-top: 16px;
+      font-size: 20px;
+      font-weight: 600;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
 
-            input[type="radio"]{
-                text-transform: uppercase;
-                font-size: 10px;
-                vertical-align: middle; 
-                margin-top: -3px; 
-                width: 12px; ;
-            }
-        }
-    
-
-        button {
-            background: $green;
-            color: $white;
-            border: none;
-            width: 360px;
-            font-size: 18px;
-            text-transform: uppercase;
-            padding-top: 18px;
-            padding-bottom: 17px;
-            margin-top: 40px;
-            border-bottom-left-radius: 5px;
-            border-bottom-right-radius: 5px;
-
-        }
-        button:hover {
-            cursor: pointer;
-            background: rgba($green, 0.8);
-            color: $white;
-            transition: 0.2s;
-        }
-
-
+      span {
+        text-transform: uppercase;
+        color: $teracotta;
+      }
     }
+    h4 {
+      padding-left: 51px;
+      margin-top: 30px;
+      font-size: 16px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      width: 360px;
+      margin: 0 auto;
+
+      input {
+        padding-left: 10px;
+        padding-bottom: 3px;
+        padding-top: 30px;
+        border: none;
+        border-bottom: 1.5px solid $shadow;
+        // width: 260px;
+        margin-left: 50px;
+        margin-right: 50px;
+        outline: none;
+        justify-content: center;
+
+        &::placeholder {
+          color: $placeholderGray;
+          font-size: 12px;
+        }
+      }
+    }
+    .sub-type {
+      padding-left: 51px;
+      padding-top: 30px;
+      font-size: 16px;
+    }
+
+    button {
+      background: $green;
+      color: $white;
+      border: none;
+      //width: 360px;
+      font-size: 18px;
+      text-transform: uppercase;
+      padding-top: 18px;
+      padding-bottom: 17px;
+      margin-top: 34px;
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+    }
+    button:hover {
+      cursor: pointer;
+      background: rgba($green, 0.8);
+      color: $white;
+      transition: 0.2s;
+    }
+  }
+
+  /* Updated CSS for radio buttons and labels */
+  .trial-options {
+    // padding-left: 51px;
+    display: flex;
+    text-transform: uppercase;
+    font-size: 9px;
+    font-weight: 800;
+    margin-top: 15px;
+    margin-left: -50px;
+    margin-right: -50px;
+  }
+
+  .radio-button {
+    accent-color: $green;
+    width: 13px;
+    height: 13px;
+    margin-right: 5px;
+    cursor: pointer;
+  }
 }

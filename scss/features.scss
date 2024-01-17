@@ -1,13 +1,14 @@
 .features {
   position: relative;
-  display: flex; 
+  display: flex;
   justify-content: center;
   padding-top: 114px;
   padding-bottom: 115px;
   margin: 0 auto;
-  background: transparent linear-gradient(270deg, #6696E2 0%, #E27866 100%) 0% 0% no-repeat padding-box;
-opacity: 0.96;
-z-index: 1;
+  background: transparent linear-gradient(270deg, #6696e2 0%, #e27866 100%) 0%
+    0% no-repeat padding-box;
+  opacity: 0.96;
+  z-index: 1;
 }
 
 .features::before {
@@ -23,57 +24,61 @@ z-index: 1;
   opacity: 0.4;
   z-index: 2;
   min-height: 595px;
-  
 }
 
 .column-boxes {
   position: relative;
   z-index: 1000;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
 
-
-  .box-top {
-    height: 100px;
-    width: 100px;
-    background-color: $teracotta; 
-    margin-bottom: 21px; 
-    font-size: 14px;
-    color: $white;
-    font-weight: 400;
-    text-transform: uppercase;
-
-     
-    .box-text-top {
-        transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);
-        padding-top: 33px;
-        margin-left: -3px;
-        font-weight: 600;
-    }
-  }
-  .box-middle,
-  .box-bottom {
-    height: 100px;
-    width: 100px;
-    background-color: $muted-teracotta; 
-    margin-bottom: 21px; 
-    font-size: 14px;
-    text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.5);
-
-    .box-text-middle {
-        transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);
-        padding-top: 32px;
-        padding-left: 6px;
-        font-weight: 600;
-    }
-    .box-text-bottom {
-        transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);
-        padding-top: 32px;
-        font-weight: 600;
-    }
+  .box-text-top {
+    transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);
+    padding-top: 33px;
+    margin-left: -3px;
+    font-weight: 600;
   }
 }
+.box-top,
+.box-middle,
+.box-bottom {
+  height: 100px;
+  width: 100px;
+  background-color: $muted-teracotta;
+  margin-bottom: 21px;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+  transition: 0.3s;
+
+  .box-text-middle {
+    transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);
+    padding-top: 32px;
+    padding-left: 6px;
+    font-weight: 600;
+  }
+  .box-text-bottom {
+    transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);
+    padding-top: 32px;
+    font-weight: 600;
+  }
+}
+
+.column-boxes .box-top:hover,
+.column-boxes .box-middle:hover,
+.column-boxes .box-bottom:hover {
+  background-color: $teracotta !important;
+  opacity: 1 !important;
+  color: $white !important;
+  cursor: pointer !important;
+}
+
+.column-boxes-clicked {
+  background-color: $teracotta;
+  color: $white;
+}
+
+//=========== CENTER ============
 
 .description {
   position: relative;
@@ -96,8 +101,6 @@ z-index: 1;
     font-size: 14px;
     padding-top: 33px;
   }
-
-
 }
 .mixed-boxes {
   position: relative;
@@ -105,31 +108,116 @@ z-index: 1;
   display: flex;
   flex-direction: column;
 
-    .top-two {
-        display: flex;
-        gap: 26px;
-        .explore-box {
-          width: 168px;
-          height: 168px;
-          background: url(../images/leafs.png);
-          background-size: cover;
-          background-position: center;
-        }
-        .salad-box {
-          width: 168px;
-          height: 168px;
-          background: url(../images/salad.png);
-          background-size: cover;
-          background-position: center;
-        }
-    }
-       .steps-box {
-        margin-top: 21px;
-          width: 362px;
-          height: 177px;
-          background: url(../images/steps.png);
-          background-size: cover;
-          background-position: center;
-        }
-}
+  // =============== BOXES ON THE RIGHT ===============
+  //
+  .top-two {
+    display: flex;
+    gap: 26px;
 
+    //======= EXPLORE BOX ==========
+
+    .top-two-box {
+      position: relative;
+      width: 168px;
+      height: 168px;
+      background: url(../images/leafs.png);
+      background-size: cover;
+      background-position: center;
+      z-index: 1;
+    }
+
+    .top-two-box::before {
+      content: "";
+      position: absolute;
+      top: 6px;
+      right: 8px;
+      bottom: 11px;
+      left: 8px;
+      background-color: $teracotta;
+      opacity: 0;
+      transition: 0.2s ease-in-out;
+    }
+
+    .top-two-box:hover::before,
+    .top-two-box:hover .box-hover-text {
+      opacity: 0.5;
+    }
+
+    .box-hover-text {
+      position: relative;
+      color: $white;
+      font-size: 20px;
+      font-weight: 600;
+      margin-top: 72px;
+      margin-left: 44px;
+      opacity: 0;
+      transition: 0.2s ease-in-out;
+      z-index: 2;
+    }
+
+    .top-two-box:hover {
+      opacity: 1;
+      cursor: pointer;
+    }
+
+    //======= SALAD BOX ==========
+
+    .salad-box {
+      position: relative;
+      width: 168px;
+      height: 168px;
+      background: url(../images/salad.png);
+      background-size: cover;
+      background-position: center;
+    }
+  }
+  //======== STEPS BOX =========
+  .steps-box {
+    position: relative;
+    margin-top: 21px;
+    width: 362px;
+    height: 177px;
+    background: url(../images/steps.png);
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+  }
+
+  .steps-box::before {
+    content: "";
+    position: absolute;
+    top: 1px;
+    right: 9px;
+    bottom: 7px;
+    left: 8px;
+    background-color: $teracotta;
+    opacity: 0;
+    transition: 0.2s ease-in-out;
+  }
+
+  .steps-box:hover::before {
+    opacity: 0.5;
+  }
+
+  .steps-box:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+
+  .steps-box:hover .box-hover-text {
+    opacity: 1;
+    cursor: pointer;
+  }
+
+  .box-hover-text {
+    position: relative;
+    color: $white;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 72px;
+    margin-left: 143px;
+    opacity: 0;
+    transition: 0.2s ease-in-out;
+    z-index: 2;
+  }
+}

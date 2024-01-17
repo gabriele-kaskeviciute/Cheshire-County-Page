@@ -1,8 +1,8 @@
 .awesome-title{
-    font-size: 36px;
-    text-transform: uppercase;
-    text-align: center;
-    padding-top: 99px;
+  font-size: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 99px;
 }
 .awesome-line {
     height: 2px;
@@ -12,10 +12,10 @@
     margin-top: 22px;
 }
 .awesome-par {
-    font-size: 18px;
-    color: $textLightGray;
-    text-align: center;
-    padding-top: 27px;
+  font-size: 18px;
+  color: $textLightGray;
+  text-align: center;
+  padding-top: 27px;
 }
 .reasons {
     display: flex;
@@ -34,6 +34,8 @@
         border: 1px solid $teracotta;
         margin: 0 auto;
         margin-bottom: 35px;
+              color: $teracotta;
+
         }
     .first-title {
         font-size: 24px;
@@ -59,43 +61,46 @@
         border: 1px solid $teracotta;
         margin: 0 auto;
         margin-bottom: 35px;
+              color: $teracotta;
+
         }
     .second-title {
-        font-size: 24px;
-        text-align: center;
-        margin-bottom: 27px;
-     }  
-     .second-paragraph {
-        font-size: 14px;
-        line-height: 20px;
-        width: 286px;
-        text-align: center;
-        margin: 0 auto;
-     } 
+      font-size: 24px;
+      text-align: center;
+      margin-bottom: 27px;
     }
-    .third {
-        .third-icon {
-        width: 50px;
-        height: 50px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50%;
-        border: 1px solid $teracotta;
-        margin: 0 auto;
-        margin-bottom: 35px;
-        }
+    .second-paragraph {
+      font-size: 14px;
+      line-height: 20px;
+      width: 286px;
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
+  .third {
+    .third-icon {
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      border: 1px solid $teracotta;
+      color: $teracotta;
+      margin: 0 auto;
+      margin-bottom: 35px;
+    }
     .third-title {
-        font-size: 24px;
-        text-align: center;
-        margin-bottom: 27px;
-     }  
-     .third-paragraph {
-        font-size: 14px;
-        line-height: 20px;
-        width: 286px;
-        text-align: center;
-        margin: 0 auto;
-     } 
+      font-size: 24px;
+      text-align: center;
+      margin-bottom: 27px;
     }
+    .third-paragraph {
+      font-size: 14px;
+      line-height: 20px;
+      width: 286px;
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
 }
